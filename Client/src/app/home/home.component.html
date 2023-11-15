@@ -1,0 +1,39 @@
+<div class="container">
+    <section>
+        <!-- Logo -->
+        <code><img src="../../assets/svg/logo.svg">SkyGuru</code>
+        <div class="row">
+            <!-- Weather Info -->
+            <div class="col">
+                <p>{{info.temperature}}°</p>
+                <div>
+                    <p>{{info.location}}</p>
+                    <sub>{{info.date}}</sub>
+                    <sub>{{info.weather}}</sub>
+                </div>
+            </div>
+            <!-- Temperature Unit -->
+            <div class="unit">
+                <span *ngFor="let i of unit" (click)="toggleSelection(i)" [ngClass]="{'selected': i.selected}">{{i.type}}</span>
+            </div>
+        </div>
+        
+    </section>
+    
+    <aside>
+        
+        <!-- Search -->
+        <div class="search">
+            <input type="text" placeholder="Location">
+            <img src="../../assets/svg/search.svg">
+        </div>
+        <!-- Weather Detail -->
+        <div class="detail">
+            <p>Weather Details</p>
+            <p>Cloudy <span>{{detail.cloudy}}%</span></p>
+            <p>Humidity <span>{{detail.humidity}}%</span></p>
+            <p>Wind <span>{{detail.wind}}km/h</span></p>
+            <p>Weather <span>{{detail.weather}}mm</span></p>
+        </div>        
+    </aside>
+</div>
