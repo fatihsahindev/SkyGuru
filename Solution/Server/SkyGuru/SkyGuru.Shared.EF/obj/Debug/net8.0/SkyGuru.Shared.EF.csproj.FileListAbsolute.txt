@@ -1,0 +1,12 @@
+D:\Serhan\Projects\GitHub\SkyGuru\Solution\Server\SkyGuru\SkyGuru.Shared.EF\bin\Debug\net8.0\SkyGuru.Shared.EF.deps.json
+D:\Serhan\Projects\GitHub\SkyGuru\Solution\Server\SkyGuru\SkyGuru.Shared.EF\bin\Debug\net8.0\SkyGuru.Shared.EF.dll
+D:\Serhan\Projects\GitHub\SkyGuru\Solution\Server\SkyGuru\SkyGuru.Shared.EF\bin\Debug\net8.0\SkyGuru.Shared.EF.pdb
+D:\Serhan\Projects\GitHub\SkyGuru\Solution\Server\SkyGuru\SkyGuru.Shared.EF\obj\Debug\net8.0\SkyGuru.Shared.EF.GeneratedMSBuildEditorConfig.editorconfig
+D:\Serhan\Projects\GitHub\SkyGuru\Solution\Server\SkyGuru\SkyGuru.Shared.EF\obj\Debug\net8.0\SkyGuru.Shared.EF.AssemblyInfoInputs.cache
+D:\Serhan\Projects\GitHub\SkyGuru\Solution\Server\SkyGuru\SkyGuru.Shared.EF\obj\Debug\net8.0\SkyGuru.Shared.EF.AssemblyInfo.cs
+D:\Serhan\Projects\GitHub\SkyGuru\Solution\Server\SkyGuru\SkyGuru.Shared.EF\obj\Debug\net8.0\SkyGuru.Shared.EF.csproj.CoreCompileInputs.cache
+D:\Serhan\Projects\GitHub\SkyGuru\Solution\Server\SkyGuru\SkyGuru.Shared.EF\obj\Debug\net8.0\SkyGuru.Shared.EF.sourcelink.json
+D:\Serhan\Projects\GitHub\SkyGuru\Solution\Server\SkyGuru\SkyGuru.Shared.EF\obj\Debug\net8.0\SkyGuru.Shared.EF.dll
+D:\Serhan\Projects\GitHub\SkyGuru\Solution\Server\SkyGuru\SkyGuru.Shared.EF\obj\Debug\net8.0\refint\SkyGuru.Shared.EF.dll
+D:\Serhan\Projects\GitHub\SkyGuru\Solution\Server\SkyGuru\SkyGuru.Shared.EF\obj\Debug\net8.0\SkyGuru.Shared.EF.pdb
+D:\Serhan\Projects\GitHub\SkyGuru\Solution\Server\SkyGuru\SkyGuru.Shared.EF\obj\Debug\net8.0\ref\SkyGuru.Shared.EF.dll
