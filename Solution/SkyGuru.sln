@@ -5,9 +5,9 @@ VisualStudioVersion = 17.8.34309.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkyGuru.Api", "Server\SkyGuru\SkyGuru.Api\SkyGuru.Api.csproj", "{4B952167-664C-4E14-9618-C240BBCEC47B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkyGuru.Shared.EF", "Server\SkyGuru\SkyGuru.Shared.EF\SkyGuru.Shared.EF.csproj", "{25588E37-9DF6-40E2-9364-DFEC5D2D3D76}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkyGuru.Shared.EF", "Server\SkyGuru\SkyGuru.Shared.EF\SkyGuru.Shared.EF.csproj", "{25588E37-9DF6-40E2-9364-DFEC5D2D3D76}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkyGuru.Entity", "Server\SkyGuru\SkyGuru.Entity\SkyGuru.Entity.csproj", "{4C231327-275F-41CA-97DB-2ED91E19093D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkyGuru.Shared.Entity", "Server\SkyGuru\SkyGuru.Entity\SkyGuru.Shared.Entity.csproj", "{4C231327-275F-41CA-97DB-2ED91E19093D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

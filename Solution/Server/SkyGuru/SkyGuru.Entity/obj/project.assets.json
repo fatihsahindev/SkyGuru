@@ -4771,9 +4771,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Serhan\\Projects\\GitHub\\SkyGuru\\Solution\\Server\\SkyGuru\\SkyGuru.Entity\\SkyGuru.Entity.csproj",
-      "projectName": "SkyGuru.Entity",
-      "projectPath": "D:\\Serhan\\Projects\\GitHub\\SkyGuru\\Solution\\Server\\SkyGuru\\SkyGuru.Entity\\SkyGuru.Entity.csproj",
+      "projectUniqueName": "D:\\Serhan\\Projects\\GitHub\\SkyGuru\\Solution\\Server\\SkyGuru\\SkyGuru.Entity\\SkyGuru.Shared.Entity.csproj",
+      "projectName": "SkyGuru.Shared.Entity",
+      "projectPath": "D:\\Serhan\\Projects\\GitHub\\SkyGuru\\Solution\\Server\\SkyGuru\\SkyGuru.Entity\\SkyGuru.Shared.Entity.csproj",
       "packagesPath": "C:\\Users\\serha\\.nuget\\packages\\",
       "outputPath": "D:\\Serhan\\Projects\\GitHub\\SkyGuru\\Solution\\Server\\SkyGuru\\SkyGuru.Entity\\obj\\",
       "projectStyle": "PackageReference",

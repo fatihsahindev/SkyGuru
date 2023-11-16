@@ -1,0 +1,15 @@
+D:\Serhan\Projects\GitHub\SkyGuru\Solution\Server\SkyGuru\SkyGuru.Entity\bin\Debug\net8.0\SkyGuru.Shared.Entity.deps.json
+D:\Serhan\Projects\GitHub\SkyGuru\Solution\Server\SkyGuru\SkyGuru.Entity\bin\Debug\net8.0\SkyGuru.Shared.Entity.runtimeconfig.json
+D:\Serhan\Projects\GitHub\SkyGuru\Solution\Server\SkyGuru\SkyGuru.Entity\bin\Debug\net8.0\SkyGuru.Shared.Entity.dll
+D:\Serhan\Projects\GitHub\SkyGuru\Solution\Server\SkyGuru\SkyGuru.Entity\bin\Debug\net8.0\SkyGuru.Shared.Entity.pdb
+D:\Serhan\Projects\GitHub\SkyGuru\Solution\Server\SkyGuru\SkyGuru.Entity\obj\Debug\net8.0\SkyGuru.Shared.Entity.csproj.AssemblyReference.cache
+D:\Serhan\Projects\GitHub\SkyGuru\Solution\Server\SkyGuru\SkyGuru.Entity\obj\Debug\net8.0\SkyGuru.Shared.Entity.GeneratedMSBuildEditorConfig.editorconfig
+D:\Serhan\Projects\GitHub\SkyGuru\Solution\Server\SkyGuru\SkyGuru.Entity\obj\Debug\net8.0\SkyGuru.Shared.Entity.AssemblyInfoInputs.cache
+D:\Serhan\Projects\GitHub\SkyGuru\Solution\Server\SkyGuru\SkyGuru.Entity\obj\Debug\net8.0\SkyGuru.Shared.Entity.AssemblyInfo.cs
+D:\Serhan\Projects\GitHub\SkyGuru\Solution\Server\SkyGuru\SkyGuru.Entity\obj\Debug\net8.0\SkyGuru.Shared.Entity.csproj.CoreCompileInputs.cache
+D:\Serhan\Projects\GitHub\SkyGuru\Solution\Server\SkyGuru\SkyGuru.Entity\obj\Debug\net8.0\SkyGuru.Shared.Entity.sourcelink.json
+D:\Serhan\Projects\GitHub\SkyGuru\Solution\Server\SkyGuru\SkyGuru.Entity\obj\Debug\net8.0\SkyGuru.Shared.Entity.dll
+D:\Serhan\Projects\GitHub\SkyGuru\Solution\Server\SkyGuru\SkyGuru.Entity\obj\Debug\net8.0\refint\SkyGuru.Shared.Entity.dll
+D:\Serhan\Projects\GitHub\SkyGuru\Solution\Server\SkyGuru\SkyGuru.Entity\obj\Debug\net8.0\SkyGuru.Shared.Entity.pdb
+D:\Serhan\Projects\GitHub\SkyGuru\Solution\Server\SkyGuru\SkyGuru.Entity\obj\Debug\net8.0\SkyGuru.Shared.Entity.genruntimeconfig.cache
+D:\Serhan\Projects\GitHub\SkyGuru\Solution\Server\SkyGuru\SkyGuru.Entity\obj\Debug\net8.0\ref\SkyGuru.Shared.Entity.dll

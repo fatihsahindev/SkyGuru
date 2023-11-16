@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UQbtHtIBiocDtxIwslnoQ85OKMnj80Xg1yZIU8VmAxSW26rBlDSc1hfOEt70R2lkUosaGSA9T75+vqfEhi7+UA==",
+  "dgSpecHash": "fjEBVTmgspVR6Ah9WmJLQByi9CUpokI02I86zPGMF/swWd1Ipuh0IvKWxH1QiRqtFnnquHXz0VJPREDzsEflRw==",
   "success": true,
-  "projectFilePath": "D:\\Serhan\\Projects\\GitHub\\SkyGuru\\Solution\\Server\\SkyGuru\\SkyGuru.Entity\\SkyGuru.Entity.csproj",
+  "projectFilePath": "D:\\Serhan\\Projects\\GitHub\\SkyGuru\\Solution\\Server\\SkyGuru\\SkyGuru.Entity\\SkyGuru.Shared.Entity.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\serha\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\serha\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
