@@ -1,0 +1,26 @@
+// Color
+$white: #fff;
+$white01: rgba(#fff, 0.1);
+$white05: rgba(#fff, 0.5);
+$white08: rgba(#fff, 0.8);
+
+$black: #000;
+$black03: rgba(#000, 0.3);
+$black05: rgba(#000, 0.5);
+
+// Flex
+@mixin flex($jc, $ai, $g) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    gap: $g;
+}
+
+// Font
+@mixin font($s, $w) {
+
+    font: {
+        size: $s;
+        weight: $w;
+    }
+}

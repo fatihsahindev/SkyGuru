@@ -1,0 +1,56 @@
+@import 'app.component.scss';
+
+section {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(7, max-content);
+    justify-content: space-between
+}
+
+aside {
+    @include flex(center, center, 0);
+    flex-direction: column;
+    color: $white05;
+
+    p:has(+ div) {
+        @include flex(center, center, 0);
+        min-width: 2rem;
+        min-height: 2rem;
+        border-radius: 50%;
+    }
+
+    div {
+        position: relative;
+        height: 100%;
+        margin-bottom: 1rem;
+
+        @mixin bar($w, $h, $z) {
+            width: $w;
+            height: $h;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: $white05;
+            backdrop-filter: blur(1rem);
+            border-radius: 1rem;
+            z-index: $z;
+        }
+
+        .line { @include bar(1px, 100%, 0) }
+
+        .fill { @include bar(0.5rem, var(--fill), 1) }
+    }
+
+    &.selected {
+        color: $white;
+
+        p:has(+ div) {
+            color: $black;
+            font-weight: bold;
+            background-color: $white;
+        }
+
+        div .fill { background-color: $white; }
+    }
+}

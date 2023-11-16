@@ -1,0 +1,10 @@
+<section>
+    <aside *ngFor="let i of bar let j = index" [ngClass]="{'selected': j == 4}">
+        <p>12°</p>
+        <div>
+            <span class="line"></span>
+            <span class="fill" style="--fill: {{fill}}%"></span>
+        </div>
+        <p [ngStyle]="{'visibility': j % 2 !== 0 ? 'hidden' : 'visible'}">{{j + 1}} PM</p>
+    </aside>
+</section>
