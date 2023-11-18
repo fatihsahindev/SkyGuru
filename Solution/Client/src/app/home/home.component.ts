@@ -56,6 +56,7 @@ export class HomeComponent implements OnInit {
         (res) => {
           this.weatherForecast = res;
           this.location = this.selectedLocation;
+          this.location = this.capitalizeFirstLetter(this.location);
           this.getWeatherStatus(res.weathercode);
           // console.log(this.weatherForecast);
         },
@@ -72,6 +73,10 @@ export class HomeComponent implements OnInit {
 
   celsiusToFahrenheit(celsius: number): number {
     return Math.floor((celsius * 9) / 5 + 32);
+  }
+
+  capitalizeFirstLetter(word: string): string {
+    return word.charAt(0).toUpperCase() + word.slice(1);
   }
 
   getWeatherStatus(weatherCode: number) {
