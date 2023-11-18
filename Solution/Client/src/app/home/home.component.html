@@ -35,7 +35,7 @@
         
         <!-- Search -->
         <div class="search">
-            <input type="text" placeholder="Location" [(ngModel)]="selectedLocation">
+            <input type="text" placeholder="Location" [(ngModel)]="selectedLocation" (keyup.enter)="getWeatherForecast(selectedLocation)">
             <button (click)="getWeatherForecast(selectedLocation!)"><img src="../../assets/svg/search.svg"></button>
         </div>
 
