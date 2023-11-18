@@ -71,7 +71,7 @@ export class HomeComponent implements OnInit {
   }
 
   celsiusToFahrenheit(celsius: number): number {
-    return (celsius * 9) / 5 + 32;
+    return Math.floor((celsius * 9) / 5 + 32);
   }
 
   getWeatherStatus(weatherCode: number) {
