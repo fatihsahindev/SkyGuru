@@ -6,9 +6,13 @@
     color: $white;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    background: center no-repeat cover;
-    background-image: url('../../assets/img/rain.avif');
     overflow: hidden;
+    background: {
+        image: url('../../assets/img/rain.avif');
+        position: center;
+        repeat: no-repeat;
+        size: cover;
+    }
 }
 
 section {

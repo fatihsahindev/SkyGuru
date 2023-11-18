@@ -27,7 +27,6 @@ export class HomeComponent implements OnInit {
   constructor(private weatherService: WeatherService) {}
 
   ngOnInit(): void {
-    this.getDate();
     this.getWeatherForecast();
   }
 
@@ -36,8 +35,7 @@ export class HomeComponent implements OnInit {
     unit.selected = true;
   }
 
-  getDate() {
-    let date;
+  getDate(date: Date | string) {
     let options: Intl.DateTimeFormatOptions = {
       weekday: 'long',
       hour: 'numeric',

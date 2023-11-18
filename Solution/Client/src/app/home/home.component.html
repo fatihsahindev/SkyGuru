@@ -17,7 +17,7 @@
                 <p>{{getTemp(weatherForecast.temperature)}}°</p>
                 <div>
                     <p>{{ weatherForecast.location }}</p><!-- TODO not work -->
-                    <sub>{{ weatherForecast.time | date: 'dd.MM.yyyy' }}</sub><!-- TODO format: 'Saturday 14.25 PM' -->
+                    <sub>{{getDate(weatherForecast.time)}}</sub>
                     <sub>{{ weatherForecast.status }}</sub><!-- TODO 'Rainy' etc. -->
                 </div>
             </div>
