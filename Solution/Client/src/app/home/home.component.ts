@@ -10,7 +10,7 @@ import { Subscription } from 'rxjs';
 export class HomeComponent implements OnInit {
   subscribes: Subscription[] = [];
   weatherForecast: any;
-  weatherIcon: string | undefined;
+  weatherView: string | undefined;
 
   unit: { type: string; selected: boolean }[] = [
     { type: 'Celcius', selected: true },
@@ -68,91 +68,105 @@ export class HomeComponent implements OnInit {
   getWeatherStatus(weatherCode: number) {
     switch (weatherCode) {
       case 0:
-        this.weatherIcon = 'sun';
+        this.weatherView = 'sun';
         break;
       case 1:
-        this.weatherIcon = 'cloud';
+        this.weatherView = 'cloud';
         break;
       case 2:
-        this.weatherIcon = 'cloud';
+        this.weatherView = 'cloud';
         break;
       case 3:
-        this.weatherIcon = 'cloud';
+        this.weatherView = 'cloud';
         break;
       case 45:
-        this.weatherIcon = 'cloud-drizzle';
+        this.weatherView = 'drizzle';
         break;
       case 48:
-        this.weatherIcon = 'cloud-drizzle';
+        this.weatherView = 'drizzle';
         break;
       case 51:
-        this.weatherIcon = 'cloud-drizzle';
+        this.weatherView = 'drizzle';
         break;
       case 53:
-        this.weatherIcon = 'cloud-drizzle';
+        this.weatherView = 'drizzle';
         break;
       case 55:
-        this.weatherIcon = 'cloud-drizzle';
+        this.weatherView = 'drizzle';
         break;
       case 56:
-        this.weatherIcon = 'cloud-rain';
+        this.weatherView = 'rain';
         break;
       case 57:
-        this.weatherIcon = 'cloud-rain';
+        this.weatherView = 'rain';
         break;
       case 61:
-        this.weatherIcon = 'cloud-rain';
+        this.weatherView = 'rain';
         break;
       case 63:
-        this.weatherIcon = 'cloud-rain';
+        this.weatherView = 'rain';
         break;
       case 65:
-        this.weatherIcon = 'cloud-rain';
+        this.weatherView = 'rain';
         break;
       case 66:
-        this.weatherIcon = 'cloud-rain';
+        this.weatherView = 'rain';
         break;
       case 67:
-        this.weatherIcon = 'cloud-rain';
+        this.weatherView = 'rain';
         break;
       case 71:
-        this.weatherIcon = 'cloud-snow';
+        this.weatherView = 'snow';
         break;
       case 73:
-        this.weatherIcon = 'cloud-snow';
+        this.weatherView = 'snow';
         break;
       case 75:
-        this.weatherIcon = 'cloud-snow';
+        this.weatherView = 'snow';
         break;
       case 77:
-        this.weatherIcon = 'cloud-snow';
+        this.weatherView = 'snow';
         break;
       case 80:
-        this.weatherIcon = 'cloud-rain';
+        this.weatherView = 'rain';
         break;
       case 81:
-        this.weatherIcon = 'cloud-rain';
+        this.weatherView = 'rain';
         break;
       case 82:
-        this.weatherIcon = 'cloud-rain';
+        this.weatherView = 'rain';
         break;
       case 85:
-        this.weatherIcon = 'cloud-snow';
+        this.weatherView = 'snow';
         break;
       case 86:
-        this.weatherIcon = 'cloud-snow';
+        this.weatherView = 'snow';
         break;
       case 95:
-        this.weatherIcon = 'wind';
+        this.weatherView = 'wind';
         break;
       case 96:
-        this.weatherIcon = 'cloud-lightning';
+        this.weatherView = 'lightning';
         break;
       case 99:
-        this.weatherIcon = 'cloud-lightning';
+        this.weatherView = 'lightning';
         break;
       default:
         break;
+    }
+  }
+
+  getView(view: string) {
+    switch (view) {
+      case 'bg': {
+        return `background-image: url('../../assets/img/${this.weatherView}.jpg');`;
+      }
+      case 'icon': {
+        return `../../assets/svg/${this.weatherView}.svg`;
+      }
+      default: {
+        return '';
+      }
     }
   }
 }

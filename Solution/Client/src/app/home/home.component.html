@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" [style]="getView('bg')">
     <section>
 
         <header>
@@ -7,7 +7,7 @@
             <code><img src="../../assets/svg/logo.svg">SkyGuru</code>
 
             <!-- Weather Icon -->
-            <img src="../../assets/svg/{{ weatherIcon }}.svg">
+            <img [src]="getView('icon')">
         </header>
 
         <div class="row">
