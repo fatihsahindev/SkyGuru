@@ -11,6 +11,8 @@ export class HomeComponent implements OnInit {
   subscribes: Subscription[] = [];
   weatherForecast: any;
   weatherView: string | undefined;
+  location: string = 'Chicago';
+  selectedLocation: string = 'Chicago';
 
   unit: { type: string; selected: boolean }[] = [
     { type: 'Celcius', selected: true },
@@ -23,16 +25,18 @@ export class HomeComponent implements OnInit {
     wind: 9,
     weather: 7,
   };
+  selectedUnit = this.unit[0];
 
   constructor(private weatherService: WeatherService) {}
 
   ngOnInit(): void {
-    this.getWeatherForecast();
+    this.getWeatherForecast(this.location);
   }
 
   toggleSelection(unit: { type: string; selected: boolean }): void {
     this.unit.forEach((unit) => (unit.selected = false));
     unit.selected = true;
+    this.selectedUnit = unit;
   }
 
   getDate(date: Date | string) {
@@ -46,11 +50,12 @@ export class HomeComponent implements OnInit {
     return date;
   }
 
-  getWeatherForecast() {
+  getWeatherForecast(location: string) {
     this.subscribes.push(
-      this.weatherService.getWeatherForecast('Bursa').subscribe(
+      this.weatherService.getWeatherForecast(location).subscribe(
         (res) => {
           this.weatherForecast = res;
+          this.location = this.selectedLocation;
           this.getWeatherStatus(res.weathercode);
           // console.log(this.weatherForecast);
         },
@@ -63,6 +68,10 @@ export class HomeComponent implements OnInit {
 
   getTemp(temp: number) {
     return Math.floor(temp);
+  }
+
+  celsiusToFahrenheit(celsius: number): number {
+    return (celsius * 9) / 5 + 32;
   }
 
   getWeatherStatus(weatherCode: number) {
