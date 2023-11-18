@@ -11,19 +11,11 @@ export class HomeComponent implements OnInit {
   subscribes: Subscription[] = [];
   weatherForecast: any;
   weatherIcon: string | undefined;
-  // weatherCode!: number;
 
   unit: { type: string; selected: boolean }[] = [
     { type: 'Celcius', selected: true },
     { type: 'Fahrenheit', selected: false },
   ];
-
-  // info = {
-  //   temperature: '12',
-  //   location: 'Harrisonburg',
-  //   date: this.getDate(),
-  //   weather: 'Rainy',
-  // };
 
   detail = {
     cloudy: 86,

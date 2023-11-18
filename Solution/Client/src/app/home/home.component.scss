@@ -8,6 +8,7 @@
     grid-template-columns: 2fr 1fr;
     background: center no-repeat cover;
     background-image: url('../../assets/img/rain.avif');
+    overflow: hidden;
 }
 
 section {
@@ -28,13 +29,31 @@ section {
     }
 }
 
-// Logo
-code {
-    @include flex(left, center, 0.5rem);
-    @include font(2rem, 200);
+header {
+    @include flex(space-between, flex-start, 0);
 
-    img { height: 2rem; }
+    // Logo
+    code {
+        @include flex(left, center, 0.5rem);
+        @include font(2rem, 200);
+    
+        img { height: 2rem; }
+    }
+
+    // Weather Icon
+    > img {
+        height: 10rem;
+        animation: opacity 2s infinite ease-in-out;
+        animation-delay: 0;
+    }
+
+    @keyframes opacity {
+        0%, 100% { opacity: 1; }
+
+        50% { opacity: 0; }
+    }
 }
+
 
 .row {
     @include flex(space-between, flex-end, 1rem);

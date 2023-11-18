@@ -1,8 +1,14 @@
 <div class="container">
     <section>
 
-        <!-- Logo -->
-        <code><img src="../../assets/svg/logo.svg">SkyGuru</code>
+        <header>
+            
+            <!-- Logo -->
+            <code><img src="../../assets/svg/logo.svg">SkyGuru</code>
+
+            <!-- Weather Icon -->
+            <img src="../../assets/svg/{{ weatherIcon }}.svg">
+        </header>
 
         <div class="row">
 
@@ -10,9 +16,9 @@
             <div class="col">
                 <p>{{getTemp(weatherForecast.temperature)}}°</p>
                 <div>
-                    <p>{{ weatherForecast.location }}</p>
-                    <sub>{{ weatherForecast.time | date: 'dd.MM.yyyy' }}</sub>
-                    <sub>{{ weatherIcon }}</sub>
+                    <p>{{ weatherForecast.location }}</p><!-- TODO not work -->
+                    <sub>{{ weatherForecast.time | date: 'dd.MM.yyyy' }}</sub><!-- TODO format: 'Saturday 14.25 PM' -->
+                    <sub>{{ weatherForecast.status }}</sub><!-- TODO 'Rainy' etc. -->
                 </div>
             </div>
 
