@@ -36,7 +36,7 @@
         <!-- Search -->
         <div class="search">
             <input type="text" placeholder="Location" [(ngModel)]="selectedLocation">
-            <img src="../../assets/svg/search.svg" (click)="getWeatherForecast(selectedLocation!)">
+            <button (click)="getWeatherForecast(selectedLocation!)"><img src="../../assets/svg/search.svg"></button>
         </div>
 
         <!-- Weather Detail -->
