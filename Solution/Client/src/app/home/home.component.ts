@@ -19,13 +19,7 @@ export class HomeComponent implements OnInit {
     { type: 'Celcius', selected: true },
     { type: 'Fahrenheit', selected: false },
   ];
-
-  detail = {
-    cloudy: 86,
-    humidity: 68,
-    wind: 9,
-    weather: 7,
-  };
+  
   selectedUnit = this.unit[0];
 
   constructor(private weatherService: WeatherService) {}
