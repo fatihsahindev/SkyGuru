@@ -25,7 +25,10 @@
 
             <!-- Temperature Unit -->
             <div class="unit">
-                <span *ngFor="let i of unit" (click)="toggleSelection(i)" [ngClass]="{'selected': i.selected}" [(ngModel)]="selectedUnit">{{i.type}}</span>
+                <label *ngFor="let i of unit" [class.selected]="i.selected">
+                    <input type="radio" name="unit" [checked]="i.selected" (click)="toggleSelection(i)" [(ngModel)]="selectedUnit" [value]="i.type">
+                    {{ i.type }}
+                </label>
             </div>
         </div>
         
