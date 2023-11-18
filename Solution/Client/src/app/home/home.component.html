@@ -8,11 +8,11 @@
 
             <!-- Weather Info -->
             <div class="col">
-                <p>{{info.temperature}}°</p>
+                <p>{{getTemp(weatherForecast.temperature)}}°</p>
                 <div>
-                    <p>{{info.location}}</p>
-                    <sub>{{info.date}}</sub>
-                    <sub>{{info.weather}}</sub>
+                    <p>{{ weatherForecast.location }}</p>
+                    <sub>{{ weatherForecast.time | date: 'dd.MM.yyyy' }}</sub>
+                    <sub>{{ weatherIcon }}</sub>
                 </div>
             </div>
 
@@ -35,9 +35,9 @@
         <!-- Weather Detail -->
         <div class="detail">
             <p>Weather Details</p>
-            <p>Cloudy <span>{{detail.cloudy}}%</span></p>
+            <p>Cloudy <span>{{weatherForecast.cloudcover}}%</span></p>
             <p>Humidity <span>{{detail.humidity}}%</span></p>
-            <p>Wind <span>{{detail.wind}}km/h</span></p>
+            <p>Wind <span>{{weatherForecast.windspeed_10m}}km/h</span></p>
             <p>Weather <span>{{detail.weather}}mm</span></p>
         </div>
         
