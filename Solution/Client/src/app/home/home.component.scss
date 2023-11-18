@@ -12,6 +12,12 @@
         repeat: no-repeat;
         size: cover;
     }
+    animation: fade 1.5s ease-in-out;
+    
+    @keyframes fade {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+    }
 }
 
 section {
@@ -47,13 +53,11 @@ header {
     > img {
         height: 10rem;
         animation: opacity 2s infinite ease-in-out;
-        animation-delay: 0;
-    }
 
-    @keyframes opacity {
-        0%, 100% { opacity: 1; }
-
-        50% { opacity: 0; }
+        @keyframes opacity {
+            0%, 100% { opacity: 1; }    
+            50% { opacity: 0; }
+        }
     }
 }
 
