@@ -95,18 +95,20 @@ header {
     .unit {
         @include flex(center, center, 1rem);
         flex-direction: row;
+      
+        label {
+          color: $white05;
+          transition: 0.5s all;
+          cursor: pointer;
+      
+          &:not(:last-child) {
+            border-right: 1px solid $white;
+            padding-right: 1rem;
+          }
 
-        span {
-            color: $white05;
-            transition: 0.5s all;
-            cursor: pointer;
-
-            &:not(:last-child) {
-                border-right: 1px solid $white;
-                padding-right: 1rem;
-            }
-
-            &.selected { color: $white; }
+          &.selected { color: $white; }
+      
+          input { display: none; }
         }
     }
 }
@@ -116,9 +118,20 @@ header {
     @include flex(space-between, center, 0);
     width: 100%;
     min-height: 3rem;
-    padding-right: 1rem;
     border-radius: 0.25rem;
     background-color: $white01;
+
+    button {
+        @include flex(center, center, 0);
+        width: 4rem;
+        height: 100%;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        transition: 0.3s all;
+        &:hover { background-color: $black03; }
+    }
 
     input {
         color: $white;

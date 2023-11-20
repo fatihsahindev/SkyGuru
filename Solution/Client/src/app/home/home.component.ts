@@ -78,52 +78,73 @@ export class HomeComponent implements OnInit {
     switch (weatherCode) {
       case 0:
         this.weatherView = 'sun';
-        this.weatherStatus = 'Sunny';
+        this.weatherStatus = 'Clear Sky';
         break;
       case 1:
       case 2:
       case 3:
         this.weatherView = 'cloud';
-        this.weatherStatus = 'Cloudy';
+        this.weatherStatus = 'Mainly clear, partly cloudy and overcast';
         break;
       case 45:
       case 48:
+        this.weatherView = 'drizzle';
+        this.weatherStatus = 'Fog and depositing rime fog';
+        break;
       case 51:
       case 53:
       case 55:
         this.weatherView = 'drizzle';
-        this.weatherStatus = 'Drizzle';
+        this.weatherStatus = 'Drizzle | Light, moderate and dense intensity';
         break;
       case 56:
       case 57:
+        this.weatherView = 'rain';
+        this.weatherStatus = 'Freezing Drizzle | Light and dense intensity';
+        break;
       case 61:
       case 63:
       case 65:
+        this.weatherView = 'rain';
+        this.weatherStatus = 'Rain | Slight, moderate and heavy intensity';
+        break;
       case 66:
       case 67:
       case 80:
       case 81:
       case 82:
         this.weatherView = 'rain';
-        this.weatherStatus = 'Rainy';
+        this.weatherStatus = 'Freezing Rain | Light and heavy intensity';
         break;
       case 71:
       case 73:
       case 75:
+        this.weatherView = 'snow';
+        this.weatherStatus = 'Snow Fall | Slight, moderate and heavy intensity';
+        break;
       case 77:
+        this.weatherView = 'snow';
+        this.weatherStatus = 'Snow Grains';
+        break;
+      case 80:
+      case 81:
+      case 82:
+        this.weatherView = 'rain';
+        this.weatherStatus = 'Rain Showers | Slight, moderate and violent';
+        break;
       case 85:
       case 86:
         this.weatherView = 'snow';
-        this.weatherStatus = 'Snowy';
+        this.weatherStatus = 'Snow showers slight and heavy';
         break;
       case 95:
         this.weatherView = 'wind';
-        this.weatherStatus = 'Windy';
+        this.weatherStatus = 'Thunderstorm | Slight or moderate';
         break;
       case 96:
       case 99:
         this.weatherView = 'lightning';
-        this.weatherStatus = 'Stormy';
+        this.weatherStatus = 'Thunderstorm with slight and heavy hail';
         break;
       default:
         break;
