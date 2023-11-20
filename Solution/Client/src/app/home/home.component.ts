@@ -53,7 +53,7 @@ export class HomeComponent implements OnInit {
           this.location = this.selectedLocation;
           this.location = this.capitalizeFirstLetter(this.location);
           this.getWeatherStatus(res.weathercode);
-          // console.log(this.weatherForecast);
+          console.log(this.weatherForecast);
         },
         (err) => {
           console.error('Weather Service Error: ', err);
@@ -110,6 +110,9 @@ export class HomeComponent implements OnInit {
         break;
       case 66:
       case 67:
+      case 80:
+      case 81:
+      case 82:
         this.weatherView = 'rain';
         this.weatherStatus = 'Freezing Rain | Light and heavy intensity';
         break;

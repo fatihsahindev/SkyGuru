@@ -7,10 +7,17 @@ import { HomeComponent } from './home/home.component';
 import { BarComponent } from './bar/bar.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { NgxSpinnerModule } from 'ngx-spinner';
 
 @NgModule({
   declarations: [AppComponent, HomeComponent, BarComponent],
-  imports: [BrowserModule, HttpClientModule, AppRoutingModule, FormsModule],
+  imports: [
+    BrowserModule,
+    HttpClientModule,
+    AppRoutingModule,
+    FormsModule,
+    NgxSpinnerModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
