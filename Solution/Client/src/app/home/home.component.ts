@@ -11,6 +11,7 @@ export class HomeComponent implements OnInit {
   subscribes: Subscription[] = [];
   weatherForecast: any;
   weatherView: string | undefined;
+  weatherStatus: string | undefined;
   location: string = 'Chicago';
   selectedLocation: string = 'Chicago';
 
@@ -19,12 +20,6 @@ export class HomeComponent implements OnInit {
     { type: 'Fahrenheit', selected: false },
   ];
 
-  detail = {
-    cloudy: 86,
-    humidity: 68,
-    wind: 9,
-    weather: 7,
-  };
   selectedUnit = this.unit[0];
 
   constructor(private weatherService: WeatherService) {}
@@ -58,7 +53,7 @@ export class HomeComponent implements OnInit {
           this.location = this.selectedLocation;
           this.location = this.capitalizeFirstLetter(this.location);
           this.getWeatherStatus(res.weathercode);
-          // console.log(this.weatherForecast);
+          console.log(this.weatherForecast);
         },
         (err) => {
           console.error('Weather Service Error: ', err);
@@ -83,87 +78,52 @@ export class HomeComponent implements OnInit {
     switch (weatherCode) {
       case 0:
         this.weatherView = 'sun';
+        this.weatherStatus = 'Sunny';
         break;
       case 1:
-        this.weatherView = 'cloud';
-        break;
       case 2:
-        this.weatherView = 'cloud';
-        break;
       case 3:
         this.weatherView = 'cloud';
+        this.weatherStatus = 'Cloudy';
         break;
       case 45:
-        this.weatherView = 'drizzle';
-        break;
       case 48:
-        this.weatherView = 'drizzle';
-        break;
       case 51:
-        this.weatherView = 'drizzle';
-        break;
       case 53:
-        this.weatherView = 'drizzle';
-        break;
       case 55:
         this.weatherView = 'drizzle';
+        this.weatherStatus = 'Drizzle';
         break;
       case 56:
-        this.weatherView = 'rain';
-        break;
       case 57:
-        this.weatherView = 'rain';
-        break;
       case 61:
-        this.weatherView = 'rain';
-        break;
       case 63:
-        this.weatherView = 'rain';
-        break;
       case 65:
-        this.weatherView = 'rain';
-        break;
       case 66:
-        this.weatherView = 'rain';
-        break;
       case 67:
-        this.weatherView = 'rain';
-        break;
-      case 71:
-        this.weatherView = 'snow';
-        break;
-      case 73:
-        this.weatherView = 'snow';
-        break;
-      case 75:
-        this.weatherView = 'snow';
-        break;
-      case 77:
-        this.weatherView = 'snow';
-        break;
       case 80:
-        this.weatherView = 'rain';
-        break;
       case 81:
-        this.weatherView = 'rain';
-        break;
       case 82:
         this.weatherView = 'rain';
+        this.weatherStatus = 'Rainy';
         break;
+      case 71:
+      case 73:
+      case 75:
+      case 77:
       case 85:
-        this.weatherView = 'snow';
-        break;
       case 86:
         this.weatherView = 'snow';
+        this.weatherStatus = 'Snowy';
         break;
       case 95:
         this.weatherView = 'wind';
+        this.weatherStatus = 'Windy';
         break;
       case 96:
-        this.weatherView = 'lightning';
-        break;
       case 99:
         this.weatherView = 'lightning';
+        this.weatherStatus = 'Stormy';
         break;
       default:
         break;

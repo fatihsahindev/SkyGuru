@@ -19,13 +19,16 @@
                 <div>
                     <p>{{ location }}</p>
                     <sub>{{getDate(weatherForecast.time)}}</sub>
-                    <sub>{{ weatherForecast.status }}</sub><!-- TODO 'Rainy' etc. -->
+                    <sub>{{ weatherStatus }}</sub>
                 </div>
             </div>
 
             <!-- Temperature Unit -->
             <div class="unit">
-                <span *ngFor="let i of unit" (click)="toggleSelection(i)" [ngClass]="{'selected': i.selected}" [(ngModel)]="selectedUnit">{{i.type}}</span>
+                <label *ngFor="let i of unit" [class.selected]="i.selected">
+                    <input type="radio" name="unit" [checked]="i.selected" (click)="toggleSelection(i)" [(ngModel)]="selectedUnit" [value]="i.type">
+                    {{ i.type }}
+                </label>
             </div>
         </div>
         
@@ -35,8 +38,8 @@
         
         <!-- Search -->
         <div class="search">
-            <input type="text" placeholder="Location" [(ngModel)]="selectedLocation">
-            <img src="../../assets/svg/search.svg" (click)="getWeatherForecast(selectedLocation!)">
+            <input type="text" placeholder="Location" [(ngModel)]="selectedLocation" (keyup.enter)="getWeatherForecast(selectedLocation)">
+            <button (click)="getWeatherForecast(selectedLocation!)"><img src="../../assets/svg/search.svg"></button>
         </div>
 
         <!-- Weather Detail -->
@@ -44,8 +47,8 @@
             <p>Weather Details</p>
             <p>Cloudy <span>{{weatherForecast.cloudcover}}%</span></p>
             <p>Humidity <span>{{weatherForecast.relativehumidity_2m}}%</span></p>
-            <p>Wind <span>{{weatherForecast.windspeed_10m}}km/h</span></p>
-            <p>Weather <span>{{detail.weather}}mm</span></p>
+            <p>Wind <span>{{weatherForecast.windspeed_10m}} km/h</span></p>
+            <p>Rain <span>{{weatherForecast.rain}} mm</span></p>
         </div>
         
         <hr>
@@ -57,3 +60,5 @@
         </div>
     </section>
 </div>
+
+<!-- <ngx-spinner bdColor = "rgba(0, 0, 0, 0.8)" size = "medium" color = "#fff" type = "ball-scale" [fullScreen] = "true"><p style="color: white" ></p></ngx-spinner> -->
