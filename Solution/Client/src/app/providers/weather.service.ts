@@ -14,4 +14,8 @@ export class WeatherService {
     getWeatherForecast(city: string): Observable<any> {
         return this.http.get<any>(`${environment.api}/${this.controllerName}/GetWeatherForecast?city=${city}`)
     }
+
+    GetHourlyWeather(city: string): Observable<any> {
+        return this.http.get<any>(`${environment.api}/${this.controllerName}/GetHourlyWeather?city=${city}`)
+    }
 }
