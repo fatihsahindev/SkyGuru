@@ -40,6 +40,26 @@ namespace SkyGuru.Api.Controllers
             }
         }
 
+        [HttpGet("GetHourlyWeather")]
+        public async Task<ActionResult> GetHourlyWeatherAsync(string city)
+        {
+            try
+            {
+                OpenMeteoClient client = new OpenMeteoClient();
 
+                WeatherForecastOptions options = new()
+                {
+                    Hourly = HourlyOptions.All,
+                };
+
+                var res = await client.QueryAsync(options);
+
+                return Ok(res.Hourly);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"An error occurred: {ex.Message}");
+            }
+        }
     }
 }

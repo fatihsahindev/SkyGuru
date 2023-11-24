@@ -53,7 +53,6 @@ export class HomeComponent implements OnInit {
           this.location = this.selectedLocation;
           this.location = this.capitalizeFirstLetter(this.location);
           this.getWeatherStatus(res.weathercode);
-          console.log(this.weatherForecast);
         },
         (err) => {
           console.error('Weather Service Error: ', err);
