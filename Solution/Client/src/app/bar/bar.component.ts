@@ -43,4 +43,10 @@ export class BarComponent implements OnInit {
       )
     );
   }
+
+  getHour(j: number) {
+    let date = new Date();
+    let now = String(date.getHours()).padStart(2, '0');
+    return parseInt(now, 10) === (j + 1);
+  }
 }

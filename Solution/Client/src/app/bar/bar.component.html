@@ -1,6 +1,6 @@
 <section>
-    <aside *ngFor="let i of bar let j = index" [ngClass]="{'selected': j == 4}">
-        <p [ngStyle]="{'visibility': j % 2 !== 0 ? 'hidden' : 'visible'}">{{ dailyTemps[j] }}°</p>
+    <aside *ngFor="let i of bar let j = index" [ngClass]="{'selected': getHour(j)}">
+        <p>{{ dailyTemps[j] }}°</p>
         <div>
             <span class="line"></span>
             <span class="fill" style="--fill: {{fill}}%"></span>
